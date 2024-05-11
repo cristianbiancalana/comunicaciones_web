@@ -2,3 +2,44 @@
     margin: 0;
     padding:0;
 }
+
+:root{
+    --primary-color:azure;
+    --secondary-color: orangered;
+    --alternative-color:rgb(43, 38, 38);
+
+}
+
+header {
+    background-color: var(--primary-color);
+    padding:  5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header img{
+    width:200px;
+    height: 50px;
+    border-radius: 20px;
+  }
+  header nav{
+   
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header nav ul li{
+    padding:15px ;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color:var(--secondary-color);
+  }
+  
+  header nav ul li a:hover {
+    color:var(--alternative-color);
+  }
