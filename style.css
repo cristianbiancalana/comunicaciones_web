@@ -7,7 +7,7 @@
     --primary-color:azure;
     --secondary-color: orangered;
     --alternative-color:rgb(43, 38, 38);
-
+    --font-text:Ubuntu Sans;
 }
 
 header {
@@ -22,9 +22,6 @@ header {
     width:200px;
     height: 50px;
     border-radius: 20px;
-  }
-  header nav{
-   
   }
   header nav ul {
     display: flex;
@@ -43,3 +40,50 @@ header {
   header nav ul li a:hover {
     color:var(--alternative-color);
   }
+
+  .history{
+    background-color: red;
+    display:flex;
+  }
+
+  .description{
+    margin: 85px 45px 45px;
+  }
+  .history h2{
+    margin: 15px;
+    font-family: var(--font-text);
+  }
+  .history p{
+    width: 400px;
+    padding: 0 25px ;
+    height: 150px;
+    font-family: var(--font-text);
+  }
+  .automatic_photos{
+    display:flex;
+    width: 630px;
+    height: 430px;
+    
+  }
+  .automatic_photos img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity:0;
+    transition: opacity 1s ease-in;
+    border-radius: 8px;
+    margin:0 5px;
+    box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
+-webkit-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
+-moz-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
+  }
+  
+
+  @keyframes fade {
+    0%, 33.3% { opacity: 1; } /* Muestra la primera imagen */
+    33.3%, 66.6% { opacity: 0; } /* Oculta la primera imagen y muestra la segunda */
+    66.6%, 100% { opacity: 0; } /* Oculta la segunda imagen y muestra la tercera */
+  }
+  .automatic_photos img:first-child{animation: fade 9s infinite;}
+  .automatic_photos img:nth-child(2){animation: fade 9s infinite 3s;}
+  .automatic_photos img:nth-child(3){animation: fade 9s infinite 6s;}
