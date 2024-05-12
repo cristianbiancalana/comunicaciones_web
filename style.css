@@ -147,6 +147,10 @@ header nav ul li a:hover {
     border-radius: 4px;
 }
 
+.products{
+    background-color: var(--primary-color);
+}
+
 .products img {
     width: 200px;
     height: 150px;
@@ -167,10 +171,26 @@ header nav ul li a:hover {
 .prod5,
 .prod6 {
     border: 3px solid black;
+    border-radius: 5px;
     margin: 30px;
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 350px;
-    height: 200px;
+    text-align: center;
+}
+
+.products button{
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    background-color: var(--primary-color);
+    
+    border-radius: 5px;
+}
+
+.products button:hover{
+    color: var(--secondary-color);
 }
