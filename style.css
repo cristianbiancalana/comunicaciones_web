@@ -42,7 +42,7 @@ header {
   }
 
   .history{
-    background-color: red;
+    background-color: var(--primary-color);
     display:flex;
   }
 
@@ -74,8 +74,8 @@ header {
     border-radius: 8px;
     margin:0 5px;
     box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
--webkit-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
--moz-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
+    -webkit-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
+    -moz-box-shadow: 200px 200px 398px 200px rgba(255,255,255,0.56) inset;
   }
   
 
@@ -87,3 +87,29 @@ header {
   .automatic_photos img:first-child{animation: fade 9s infinite;}
   .automatic_photos img:nth-child(2){animation: fade 9s infinite 3s;}
   .automatic_photos img:nth-child(3){animation: fade 9s infinite 6s;}
+
+  .category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    font-family: var(--font-text);
+  }
+
+  .category .cat1,.cat2,.cat3{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .category img{
+    width: 200px;
+    height: 150px;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
