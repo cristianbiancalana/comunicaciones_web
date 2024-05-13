@@ -28,8 +28,8 @@ header {
 }
 
 header img {
-    width: 200px;
-    height: 50px;
+    width: 250px;
+    height: 70px;
     border-radius: 20px;
 }
 
@@ -40,6 +40,7 @@ header nav ul {
 
 header nav ul li {
     padding: 15px;
+    font-family: var(--font-text2);
 }
 
 header nav ul li a {
@@ -62,6 +63,7 @@ header nav ul li a:hover {
 .history h2 {
     margin: 15px 0;
     font-family: var(--font-text);
+    font-size: 34px;
 }
 
 
@@ -71,6 +73,7 @@ header nav ul li a:hover {
     padding: 0 25px;
     height: 150px;
     font-family: var(--font-text2);
+    font-size:19px;
 }
 .automatic_photos {
     display: flex;
@@ -125,6 +128,8 @@ header nav ul li a:hover {
 .category {
     min-height: 100vh;
     display: grid;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--secondary-color);
     font-family: var(--font-text);
@@ -170,6 +175,12 @@ header nav ul li a:hover {
     align-items: center;
     margin: 10px auto;
     border-radius: 5px;
+}
+
+.products h2 , .contact h2{
+    margin: 30px 0;
+    font-family: var(--font-text);
+    font-size: 34px;
 }
 
 .products img {
@@ -225,7 +236,7 @@ header nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    font-size: 15px;
     position: relative;
     margin: 10px auto -10px;
     border-radius: 5px;
@@ -260,6 +271,12 @@ footer {
     border-radius:5px ;
 }
 
+footer label{
+    font-family: var(--font-text2t);
+    font-size: 21px;
+    font-style: italic;
+}
+
 footer i {
     margin: 20px 25px 0;
 }
@@ -270,12 +287,12 @@ footer label {
 
 .skewed {
     position: absolute;
-    top: -15px;
+    top: -5px;
     bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 20%;
     background: var(--primary-color);
     z-index: 0;
     transform: skewY(8deg);
@@ -284,16 +301,18 @@ footer label {
 }
 
 .wtsapp {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 9999;
     display: flex;
-    margin-left: 90%;
+    bottom: 170px;
+    right: 90px; 
     border-radius: 100%;
     background-color: greenyellow;
 }
-
 .mesage{
     margin:30px 0;
+    width: 500px;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-text2);
 }
