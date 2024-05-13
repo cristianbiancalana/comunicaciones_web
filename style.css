@@ -11,7 +11,7 @@
     --font-text2: Roboto;
 }
 
-body{
+body {
     width: 95%;
     margin: 15px auto;
     background-color: var(--primary-color);
@@ -73,8 +73,9 @@ header nav ul li a:hover {
     padding: 0 25px;
     height: 150px;
     font-family: var(--font-text2);
-    font-size:19px;
+    font-size: 19px;
 }
+
 .automatic_photos {
     display: flex;
     width: 630px;
@@ -151,7 +152,8 @@ header nav ul li a:hover {
     text-align: center;
     font-size: 20px;
 }
-.category p{
+
+.category p {
     margin: 15px;
     font-size: 12px;
     font-style: italic;
@@ -177,8 +179,9 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-.products h2 , .contact h2{
-    margin: 30px 0;
+.products h2,
+.contact h2 {
+    margin: 25px 30px 0;
     font-family: var(--font-text);
     font-size: 34px;
 }
@@ -265,13 +268,13 @@ footer {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     height: 200px;
     font-family: var(--font-text);
-    border-radius:5px ;
+    border-radius: 5px;
 }
 
-footer label{
+footer label {
     font-family: var(--font-text2t);
     font-size: 21px;
     font-style: italic;
@@ -287,7 +290,7 @@ footer label {
 
 .skewed {
     position: absolute;
-    top: -5px;
+    top: 5px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -305,12 +308,13 @@ footer label {
     z-index: 9999;
     display: flex;
     bottom: 170px;
-    right: 90px; 
+    right: 90px;
     border-radius: 100%;
     background-color: greenyellow;
 }
-.mesage{
-    margin:30px 0;
+
+.mesage {
+    margin: 30px 0;
     width: 500px;
     display: flex;
     flex-direction: column;
