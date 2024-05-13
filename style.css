@@ -359,8 +359,13 @@ footer label {
     }
 
     body {
-        width: 500px;
+        width: 525px;
         margin: 0 10px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 10px;
     }
 
     .description {
